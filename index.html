@@ -1,23 +1,23 @@
-</script>
-<p>Hello 大家好</p>
-<p>我是张家豪，这是我的个人网站。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
-<p> 一个<b>测试</b>捏(测试两字应该被加粗了) </p>
-<p> Things I want to do in Part IB </p>
-<ul>
-  <li>How to create awesome github pages(js, html, css)</li>
-  <li>Quantum Information and Quantum Computation</li>
-  <li>CS61C</li>
-  <li>To be continued</li>
-</ul>
-<p> Resources that I need to utilise in Part IB</p>
-<ul>
-  <li> <a href="csdiy.wiki">计算机自学指南</a> </li> 
-  <li> <a href="https://github.com/codecrafters-io/build-your-own-x">Build Your X</a></li>
-  <li> To be continued </li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Paper Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+<div id="paper-tracker">
+    <input type="text" id="paper-title" placeholder="Paper Title">
+    <input type="date" id="paper-date">
+    <button onclick="addPaper()">Add Paper</button>
 
-<ul>
-  <li> <a href="https://mp.weixin.qq.com/s?__biz=MzkyNDMwOTQ5MQ==&mid=2247483650&idx=1&sn=972c409df1bc0a6d494c25f468f49731&chksm=c1d6839ef6a10a88819f22a9c06095c58b3f3753e9fb99bd1de3135b3d2f0d9f132b222cab9e&token=278767731&lang=en_US#rd">微信公众号</a> </li>
-</ul>
+    <ul id="papers-list">
+        <!-- Papers will be listed here -->
+    </ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -3,21 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Past Paper Tracker</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Personal Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .post {
+            margin-bottom: 20px;
+        }
+        .post h2 {
+            color: #333;
+        }
+        .post p {
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-
-<div id="paper-tracker">
-    <input type="text" id="paper-title" placeholder="Paper Title">
-    <input type="date" id="paper-date">
-    <button onclick="addPaper()">Add Paper</button>
-
-    <ul id="papers-list">
-        <!-- Papers will be listed here -->
-    </ul>
-</div>
-
-<script src="script.js"></script>
+    <header>
+        <h1>Welcome to My Personal Blog</h1>
+    </header>
+    <main>
+        <article class="post">
+            <h2>我的公众号</h2>
+            <p>Please followwwww!(笑死不过谁都看不到)</p>
+            <img src="../images/qrcode.jpg" alt="qr code" width="200" height="200">
+        </article>
+        <article class="post">
+            <h2>Post Title 2</h2>
+            <p>This is the content of my second blog post.</p>
+        </article>
+    </main>
+    <footer>
+        <p>© 2024 My Personal Blog</p>
+    </footer>
 </body>
 </html>

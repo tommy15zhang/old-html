@@ -34,27 +34,50 @@
         </nav>
     </header>
     <main>
+        
         <section id="about">
             <h2>About Me</h2>
             <p>A Second Year(Part IB) Engineering Student at Robinson College, Cambridge, getting roasted by Engineering Tripos.</p>
         </section>
 
-        <section id="interests">
-            <h2>技术兴趣及进度</h2>
-            <div class="progress-container">
-                <div class="progress-bar" style="width:1%;">Matlab</div>
-            </div>
-            <div class="progress-container">
-                <div class="progress-bar" style="width:0.1%;">Embedded_C/C++</div>
-            </div>
-            <div class="progress-container">
-                <div class="progress-bar" style="width:0.1%;">FPGA(Verilog)</div>
-            </div>
-            <div class="progress-container">
-                <div class="progress-bar" style="width:0.1%;">PCB</div>
-            </div>
-            <!-- 你可以继续添加更多技术的进度条 -->
+        <section id="Interests">
+
+        <h1>我的技术兴趣及进度</h1>
+    
+        <!-- 静态进度条容器 -->
+        <div id="progressOutput"></div>
+
         </section>
+    
+        <script>
+            // 技术兴趣及其进度
+            const interestsProgress = [
+                {name: "Matlab", progress: 0},
+                {name: "Embedded C/C++", progress: 0},
+                {name: "FPGA (Verilog)", progress: 0},
+                {name: "PCB Design", progress: 0}
+            ];
+    
+            function displayProgress() {
+                const outputElement = document.getElementById('progressOutput');
+                outputElement.innerHTML = ''; // 清空现有内容
+    
+                interestsProgress.forEach(interest => {
+                    const totalLength = 60; // 总进度条长度
+                    const filledLength = Math.round((interest.progress / 100) * totalLength);
+                    const emptyLength = totalLength - filledLength;
+    
+                    // 创建并显示进度条
+                    const progressBar = '#'.repeat(filledLength) + '.'.repeat(emptyLength);
+                    const progressLine = `${interest.name} - [${progressBar}] ${interest.progress}%<br>`;
+                    outputElement.innerHTML += progressLine;
+                });
+            }
+    
+            // 在页面加载完成后显示进度条
+            window.onload = displayProgress;
+        </script>
+    
 
         
 
@@ -79,6 +102,7 @@
         </section>
 
     </main>
+    
     
     <footer>
         <p>版权所有 &copy; 2024</p>

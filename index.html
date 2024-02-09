@@ -1,42 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Blog</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .post {
-            margin-bottom: 20px;
-        }
-        .post h2 {
-            color: #333;
-        }
-        .post p {
-            color: #666;
-        }
-    </style>
+    <title>个人主页</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Personal Blog</h1>
+        <h1>我的个人主页</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <article class="post">
-            <h2>我的公众号</h2>
-            <p>Please followwwww!(笑死不过谁都看不到)</p>
+        <section id="about">
+            <h2>关于我</h2>
+            <p>这里是关于我的介绍。</p>
+        </section>
+
+        <section id="projects">
+            <h2>项目</h2>
+            <p>这里是我参与的项目展示。</p>
+        </section>
+
+        <aside>
+            <h2>侧边栏</h2>
+            <p>这里可以放置额外的信息，比如广告或链接等。</p>
+        </aside>
+
+        <section id="contact">
+            <h2>联系方式</h2>
+            <p>微信公众号</p>
             <img src="../images/qrcode.jpg" alt="qr code" width="200" height="200">
-        </article>
-        <article class="post">
-            <h2>Current Interests</h2>
-            <p>FPGA</p>
-            <p>Embedded System</p>
-        </article>
+        </section>
     </main>
     <footer>
-        <p>© 2024 My Personal Blog</p>
+        <p>版权所有 &copy; 2024</p>
     </footer>
+    <script src="../script.js"></script>
 </body>
 </html>

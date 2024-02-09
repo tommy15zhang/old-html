@@ -1,0 +1,57 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+section, aside {
+    padding: 20px;
+}
+
+/* 特定部分的样式 */
+#about, #projects, #contact {
+    margin-bottom: 20px;
+}
+
+aside {
+    width: 20%;
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        width: auto;
+    }
+}

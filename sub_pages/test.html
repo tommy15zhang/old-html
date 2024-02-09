@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verilog 代码生成器</title>
+</head>
+<body>
+    <h1>Verilog 代码生成器</h1>
+    <h2>选择模块类型(Adder,Multiplier)</h2>
+    <input type="text" id="moduleName" placeholder="请输入模块名称">
+    <button onclick="generateVerilogCode()">生成代码</button>
+    <pre id="verilogCodeOutput"></pre>
+
+    <script>
+        function generateVerilogCode() {
+            var moduleName = document.getElementById('moduleName').value;
+            var code = "";
+
+            if (moduleName === "Adder") {
+                code = `module Adder(a, b, sum);\n    input a, b;\n    output sum;\n    // Adder逻辑\nendmodule`;
+            } else if (moduleName === "Multiplier") {
+                code = `module Multiplier(a, b, product);\n    input a, b;\n    output product;\n    // Multiplier逻辑\nendmodule`;
+            } else {
+                code = `module ${moduleName}();\n    // 你的Verilog代码逻辑\nendmodule`;
+            }
+
+            document.getElementById('verilogCodeOutput').textContent = code;
+        }
+    </script>
+</body>
+</html>

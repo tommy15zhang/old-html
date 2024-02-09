@@ -55,3 +55,18 @@ aside {
         width: auto;
     }
 }
+
+/* 进度条样式 */
+.progress-container {
+    width: 100%;
+    background-color: #eee;
+    margin: 20px 0;
+}
+.progress-bar {
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+    

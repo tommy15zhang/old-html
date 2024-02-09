@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人主页</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -21,34 +20,44 @@
     </header>
     <main>
         <section id="about">
-            <h2>关于我</h2>
-            <p>这里是关于我的介绍。</p>
+            <h2>About Me</h2>
+            <p>A Second Year(Part IB) Engineering Student at Robinson College, Cambridge, getting roasted by Engineering Tripos.</p>
         </section>
 
         <section id="interests">
             <h2>技术兴趣及进度</h2>
-            <canvas id="techProgressChart" width="400" height="200"></canvas>
+            <div class="progress-container">
+                <div class="progress-bar" style="width:1%;">Matlab</div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" style="width:0.1%;">Embedded_C/C++</div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" style="width:0.1%;">FPGA(Verilog)</div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" style="width:0.1%;">PCB</div>
+            </div>
+            <!-- 你可以继续添加更多技术的进度条 -->
         </section>
 
+
         <section id="projects">
-            <h2>项目</h2>
+            <h2>Projects</h2>
             <p>这里是我参与的项目展示。</p>
         </section>
 
-        <aside>
-            <h2>侧边栏</h2>
-            <p>这里可以放置额外的信息，比如广告或链接等。</p>
-        </aside>
+  
 
         <section id="contact">
-            <h2>联系方式</h2>
-            <p>微信公众号</p>
+            <h2>Contact Me</h2>
+            <p>Wechat Platform</p>
             <img src="../images/qrcode.jpg" alt="qr code" width="200" height="200">
         </section>
     </main>
+    
     <footer>
         <p>版权所有 &copy; 2024</p>
     </footer>
-    <script src="../js/interests-chart.js"></script> 
 </body>
 </html>
